@@ -24,8 +24,8 @@ const ImageContainer = () => {
 
   return (
     <div className="image-container">
-      {allImages.map((image, index) => (
-        <div key={index}>
+      {allImages?.map((image, index) => (
+        <div key={image.id}>
           <img src={image.urls.regular} alt="image" />
           {index === allImages.length - 1 && <div ref={loader}>Loading...</div>}
         </div>
