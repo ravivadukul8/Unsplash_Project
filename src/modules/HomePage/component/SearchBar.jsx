@@ -15,6 +15,7 @@ const SearchBar = () => {
 
   useEffect(() => {
     dispatch(changeSearchValue(searchValue));
+    window.scrollTo(0, 0);
   }, [searchValue, dispatch]);
 
   return (

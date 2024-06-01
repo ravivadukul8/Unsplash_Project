@@ -1,10 +1,6 @@
 body {
   margin: 15px;
   padding: 0;
-  /* width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background-color: #f9f9f9; */
 }
 
 .search-bar {
@@ -30,17 +26,6 @@ body {
   }
 }
 
-/* .image-container {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  img {
-    width: 24%;
-    border-radius: 11px;
-    object-fit: cover;
-  }
-} */
-
 .image-container {
   display: grid;
   gap: 20px;
@@ -54,14 +39,13 @@ body {
   object-fit: cover;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .image-container {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 
   .image-container img {
-    height: 100px; /* Adjust height for smaller screens */
+    height: 100px;
   }
 }
 
@@ -71,6 +55,6 @@ body {
   }
 
   .image-container img {
-    height: 80px; /* Adjust height for smaller screens */
+    height: 80px;
   }
 }
